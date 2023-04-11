@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HINDI OCR</title>
+  </head>
+
+  <body>
+    <center>
+      <h1>Image Classification</h1>
+
+      <form
+        class="text-center"
+        acition="/"
+        ,
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input class="form-control" type="file" name="image" />
+        <input
+          class="btn btn-primary mt-3"
+          type="submit"
+          value="Predict Image"
+        />
+      </form>
+
+      {% if prediction %}
+      <h3>The Letter is '{{prediction}}'</h3>
+      {% endif %}
+    </center>
+  </body>
+</html>
